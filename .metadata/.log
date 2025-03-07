@@ -4938,3 +4938,38 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-07 20:16:30.435
 !MESSAGE Boot project REMOVED: Sendinghtml
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-07 20:23:39.565
+!MESSAGE Classpath changed for project: Sendinghtml
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-07 20:23:39.567
+!MESSAGE Boot project ADDED: Sendinghtml
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-07 20:28:18.903
+!MESSAGE Classpath changed for project: Sendinghtml
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-07 20:28:18.905
+!MESSAGE Boot project REMOVED: Sendinghtml
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2025-03-07 20:28:18.943
+!MESSAGE Failed to connect to Boot app
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Sendinghtml does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2427)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:198)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.processTerminated(RunStateTracker.java:267)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.processTerminated(ProcessTracker.java:112)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.handleDebugEvent(ProcessTracker.java:78)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker$1.handleDebugEvents(ProcessTracker.java:48)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-03-07 20:28:18.944
+!MESSAGE Sendinghtml does not exist
