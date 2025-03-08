@@ -5542,3 +5542,133 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 11:48:31.893
 !MESSAGE Boot project REMOVED: DemoApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 11:49:24.115
+!MESSAGE Classpath changed for project: Assignment2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-03-08 11:49:24.120
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IClasspathEntry.getPath()" because the return value of "org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.getJreContainer(org.eclipse.jdt.core.IClasspathEntry[])" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IClasspathEntry.getPath()" because the return value of "org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.getJreContainer(org.eclipse.jdt.core.IClasspathEntry[])" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:98)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 11:49:25.530
+!MESSAGE Classpath changed for project: Assignment2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 11:49:25.531
+!MESSAGE Boot project ADDED: Assignment2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 11:50:26.092
+!MESSAGE Classpath changed for project: FirstWebApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 11:50:26.093
+!MESSAGE Boot project ADDED: FirstWebApp
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-08 11:52:46.036
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 11:54:10.146
+!MESSAGE Classpath changed for project: FirstWebApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 11:54:10.147
+!MESSAGE Boot project REMOVED: FirstWebApp
+
+!ENTRY org.eclipse.jface 2 0 2025-03-08 11:59:45.339
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-03-08 11:59:45.339
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:00:10.833
+!MESSAGE Classpath changed for project: AAssignment-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:00:10.834
+!MESSAGE Boot project ADDED: AAssignment-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:00:11.816
+!MESSAGE Classpath changed for project: AAssignment-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:02:05.513
+!MESSAGE Classpath changed for project: Assignment2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:02:05.514
+!MESSAGE Boot project REMOVED: Assignment2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-03-08 12:02:05.519
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Assignment2 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2372)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-03-08 12:02:05.520
+!MESSAGE Assignment2 does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:02:52.051
+!MESSAGE Classpath changed for project: Assignment-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:02:52.052
+!MESSAGE Boot project ADDED: Assignment-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:02:52.620
+!MESSAGE Classpath changed for project: Assignment-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:03:13.394
+!MESSAGE Classpath changed for project: AAssignment-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:03:13.395
+!MESSAGE Boot project REMOVED: AAssignment-1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-03-08 12:03:13.398
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): AAssignment-1 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2372)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-03-08 12:03:13.399
+!MESSAGE AAssignment-1 does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:03:43.867
+!MESSAGE Classpath changed for project: Assignment-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-08 12:03:43.868
+!MESSAGE Boot project REMOVED: Assignment-1

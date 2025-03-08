@@ -360,3 +360,88 @@
 2025-03-08 11:48:24,190 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-03-08 11:48:24,223 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-03-08 11:48:24,229 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\DemoApp\src\test\resources
+2025-03-08 11:49:23,204 [Worker-10: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Assignment2:0.0.1-SNAPSHOT @ C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\pom.xml.
+2025-03-08 11:49:24,215 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Assignment2/src/main/java
+2025-03-08 11:49:24,218 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment2/src/main/resources
+2025-03-08 11:49:24,226 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment2/src/main/resources
+2025-03-08 11:49:24,232 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Assignment2/src/test/java
+2025-03-08 11:49:24,235 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment2/src/test/resources
+2025-03-08 11:49:24,530 [Worker-10: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2025-03-08 11:49:24,535 [Worker-10: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-03-08 11:49:24,924 [Worker-10: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Assignment2:0.0.1-SNAPSHOT @ C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\pom.xml.
+2025-03-08 11:49:25,317 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Assignment2/src/main/java
+2025-03-08 11:49:25,319 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment2/src/main/resources
+2025-03-08 11:49:25,321 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment2/src/main/resources
+2025-03-08 11:49:25,322 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Assignment2/src/test/java
+2025-03-08 11:49:25,323 [Worker-10: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment2/src/test/resources
+2025-03-08 11:49:25,610 [Worker-10: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-03-08 11:49:26,129 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 11:49:26,185 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 11:49:26,192 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\src\test\resources
+2025-03-08 11:50:05,199 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 11:50:05,215 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 11:50:05,229 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\src\test\resources
+2025-03-08 11:50:27,614 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:FirstWebApp:0.0.1-SNAPSHOT @ C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\FirstWebApp\pom.xml.
+2025-03-08 11:52:53,919 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 11:52:53,928 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 11:52:53,930 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\src\test\resources
+2025-03-08 11:53:46,445 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 11:53:46,459 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 11:53:46,464 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\src\test\resources
+2025-03-08 11:54:03,076 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 11:54:03,087 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 11:54:03,091 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\src\test\resources
+2025-03-08 11:57:10,852 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 11:57:10,870 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 11:57:10,875 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\src\test\resources
+2025-03-08 11:58:19,016 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 11:58:19,028 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 11:58:19,033 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment2\src\test\resources
+2025-03-08 12:00:09,883 [Worker-9: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:AAssignment-1:0.0.1-SNAPSHOT @ C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\AAssignment-1\pom.xml.
+2025-03-08 12:00:10,492 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AAssignment-1/src/main/java
+2025-03-08 12:00:10,495 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AAssignment-1/src/main/resources
+2025-03-08 12:00:10,504 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AAssignment-1/src/main/resources
+2025-03-08 12:00:10,511 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AAssignment-1/src/test/java
+2025-03-08 12:00:10,512 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AAssignment-1/src/test/resources
+2025-03-08 12:00:10,858 [Worker-9: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2025-03-08 12:00:10,863 [Worker-9: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-03-08 12:00:11,250 [Worker-9: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:AAssignment-1:0.0.1-SNAPSHOT @ C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\AAssignment-1\pom.xml.
+2025-03-08 12:00:11,642 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AAssignment-1/src/main/java
+2025-03-08 12:00:11,643 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AAssignment-1/src/main/resources
+2025-03-08 12:00:11,644 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AAssignment-1/src/main/resources
+2025-03-08 12:00:11,644 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AAssignment-1/src/test/java
+2025-03-08 12:00:11,645 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AAssignment-1/src/test/resources
+2025-03-08 12:00:11,850 [Worker-9: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-03-08 12:00:12,208 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 12:00:12,230 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 12:00:12,236 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\AAssignment-1\src\test\resources
+2025-03-08 12:00:23,877 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 12:00:23,888 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 12:00:23,892 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\AAssignment-1\src\test\resources
+2025-03-08 12:01:16,983 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 12:01:17,011 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 12:01:17,016 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\AAssignment-1\src\test\resources
+2025-03-08 12:01:22,861 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 12:01:22,871 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 12:01:22,876 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\AAssignment-1\src\test\resources
+2025-03-08 12:02:50,962 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Assignment-1:0.0.1-SNAPSHOT @ C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment-1\pom.xml.
+2025-03-08 12:02:51,397 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Assignment-1/src/main/java
+2025-03-08 12:02:51,398 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment-1/src/main/resources
+2025-03-08 12:02:51,402 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment-1/src/main/resources
+2025-03-08 12:02:51,407 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Assignment-1/src/test/java
+2025-03-08 12:02:51,408 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment-1/src/test/resources
+2025-03-08 12:02:51,677 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2025-03-08 12:02:51,681 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-03-08 12:02:52,013 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Assignment-1:0.0.1-SNAPSHOT @ C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment-1\pom.xml.
+2025-03-08 12:02:52,429 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Assignment-1/src/main/java
+2025-03-08 12:02:52,430 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment-1/src/main/resources
+2025-03-08 12:02:52,431 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment-1/src/main/resources
+2025-03-08 12:02:52,431 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Assignment-1/src/test/java
+2025-03-08 12:02:52,432 [Worker-8: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Assignment-1/src/test/resources
+2025-03-08 12:02:52,645 [Worker-8: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-03-08 12:02:53,007 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 12:02:53,022 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 12:02:53,027 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment-1\src\test\resources
+2025-03-08 12:03:03,202 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-08 12:03:03,209 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-08 12:03:03,212 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\fathi\OneDrive\Desktop\Kodnest\SpringProjects\Assignment-1\src\test\resources
