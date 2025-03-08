@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+	<style>
+	        body {
+	            font-family: 'Poppins', sans-serif;
+	            background: linear-gradient(135deg, #667eea, #764ba2);
+	            display: flex;
+	            justify-content: center;
+	            align-items: center;
+	            height: 100vh;
+	            margin: 0;
+	        }
+
+	        .calculator {
+	            background: #fff;
+	            padding: 25px;
+	            border-radius: 12px;
+	            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+	            text-align: center;
+	            width: 320px;
+	            animation: fadeIn 0.5s ease-in-out;
+	        }
+
+	        h1 {
+	            font-size: 26px;
+	            color: #333;
+	            margin-bottom: 10px;
+	        }
+
+	        input {
+	            width: 90%;
+	            padding: 12px;
+	            margin: 10px 0;
+	            border: 2px solid #ccc;
+	            border-radius: 6px;
+	            font-size: 16px;
+	            text-align: center;
+	            transition: border-color 0.3s;
+	        }
+
+	        input:focus {
+	            border-color: #007bff;
+	            outline: none;
+	            box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+	        }
+
+	        .buttons {
+	            display: flex;
+	            justify-content: space-between;
+	            margin-top: 10px;
+	        }
+
+	        button {
+	            width: 22%;
+	            padding: 12px;
+	            border: none;
+	            border-radius: 6px;
+	            font-size: 16px;
+	            cursor: pointer;
+	            background-color: #007bff;
+	            color: white;
+	            transition: background 0.3s ease-in-out, transform 0.2s;
+	        }
+
+	        button:hover {
+	            background-color: #0056b3;
+	            transform: scale(1.05);
+	        }
+
+	        button:active {
+	            transform: scale(0.95);
+	        }
+
+	        @keyframes fadeIn {
+	            from {
+	                opacity: 0;
+	                transform: translateY(-10px);
+	            }
+	            to {
+	                opacity: 1;
+	                transform: translateY(0);
+	            }
+	        }
+	    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <form action="http://localhost:8080/api/calculator" method="post">		
+			<input type="number" name="num1" placeholder="Enter first number" id="num1">
+		    <input type="number" name="num2" placeholder="Enter second number" id="num2">
+		    <div class="buttons">
+				<button type="submit" id="add" name="op" value="add">Add</button>
+				<button type="submit" id="sub" name="op" value="sub">Sub</button>
+				<button type="submit" id="mul" name="op" value="mul">Mul</button>
+				<button type="submit" id="div" name="op" value="div">Div</button>
+			</div></form>
+    </div>
+</body>
+</html>
