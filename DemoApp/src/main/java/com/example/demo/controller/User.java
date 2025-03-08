@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/api")
 public class User {
 	
-	@RequestMapping("/user/{year}")
+	@RequestMapping("/user/future/{year}")
 	public String getUser(@PathVariable String year, Model model) {
 		String message = Integer.parseInt(year) + 10 + "";
 		model.addAttribute("message", message);
