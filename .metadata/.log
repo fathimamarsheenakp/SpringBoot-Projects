@@ -6550,3 +6550,15 @@ Java Model Exception: Error in Java Model (code 969): EmployeeSB does not exist
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-09 21:06:05.978
 !MESSAGE Boot project REMOVED: EmployeeDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-09 21:06:38.634
+!MESSAGE Classpath changed for project: EmployeeDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-09 21:06:38.635
+!MESSAGE Boot project ADDED: EmployeeDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-09 21:06:53.092
+!MESSAGE Classpath changed for project: EmployeeDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-09 21:06:53.093
+!MESSAGE Boot project REMOVED: EmployeeDemo
