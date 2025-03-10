@@ -6758,3 +6758,83 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 13:11:54.206
 !MESSAGE Boot project REMOVED: SecurityDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:23:12.576
+!MESSAGE Classpath changed for project: RoleSecurityDemo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-03-10 17:23:12.613
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IClasspathEntry.getPath()" because the return value of "org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.getJreContainer(org.eclipse.jdt.core.IClasspathEntry[])" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IClasspathEntry.getPath()" because the return value of "org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.getJreContainer(org.eclipse.jdt.core.IClasspathEntry[])" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:98)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:23:20.217
+!MESSAGE Classpath changed for project: RoleSecurityDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:23:20.219
+!MESSAGE Boot project ADDED: RoleSecurityDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:23:20.930
+!MESSAGE Classpath changed for project: RoleSecurityDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:23:39.861
+!MESSAGE Classpath changed for project: EmployeeCRUD
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:23:39.891
+!MESSAGE Boot project ADDED: EmployeeCRUD
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:26:01.994
+!MESSAGE Classpath changed for project: EmployeeCRUD
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:26:01.995
+!MESSAGE Boot project REMOVED: EmployeeCRUD
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:55:21.261
+!MESSAGE Classpath changed for project: RoleBasedAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:55:21.263
+!MESSAGE Classpath changed for project: RoleSecurityDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:55:21.264
+!MESSAGE Boot project REMOVED: RoleSecurityDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:55:24.828
+!MESSAGE Classpath changed for project: RoleBasedAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:55:24.844
+!MESSAGE Boot project ADDED: RoleBasedAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 17:55:24.901
+!MESSAGE Classpath changed for project: RoleBasedAuthentication
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-10 17:55:25.420
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-10 17:58:37.964
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 18:04:52.372
+!MESSAGE Classpath changed for project: RoleBasedAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-10 18:04:52.375
+!MESSAGE Boot project REMOVED: RoleBasedAuthentication
