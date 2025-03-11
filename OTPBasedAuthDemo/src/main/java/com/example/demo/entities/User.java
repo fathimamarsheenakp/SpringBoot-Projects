@@ -28,13 +28,13 @@ public class User {
 	String role;
 	
 	@Column
-	int otp;
+	Integer otp;
 	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(int id, String name, String email, String password, String role, int otp) {
+	public User(int id, String name, String email, String password, String role, Integer otp) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -44,7 +44,7 @@ public class User {
 		this.otp = otp;
 	}
 
-	public User(String name, String email, String password, String role, int otp) {
+	public User(String name, String email, String password, String role, Integer otp) {
 		super();
 		this.name = name;
 		this.email = email;
@@ -93,12 +93,13 @@ public class User {
 		this.role = role;
 	}
 
-	public int getOtp() {
+	public Integer getOtp() {
 		return otp;
 	}
 
-	public void setOtp(int otp) {
+	public void setOtp(Integer otp) {
 		this.otp = otp;
 	}
+	
 	
 }

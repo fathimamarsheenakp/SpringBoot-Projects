@@ -1,5 +1,7 @@
 package com.example.demo.services;
 
+import java.util.Random;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,10 +18,18 @@ public class UserService {
 		User user = repository.findByEmail(email);
 		
 		if (user != null && user.getPassword().equals(password)) {
-			return true;
+			int otp = generateOtp();
+	        user.setOtp(otp);
+	        repository.save(user);
+	        return true;
 		} else {
 			return false;
 		}
+	}
+	
+	public int generateOtp() {
+	    Random random = new Random();
+	    return 100000 + random.nextInt(900000); // Generates a 6-digit OTP
 	}
 	
 	public String verifyOtp(int otp, String email) {
