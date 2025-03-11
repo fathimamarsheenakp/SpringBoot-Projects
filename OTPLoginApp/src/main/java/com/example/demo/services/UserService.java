@@ -1,5 +1,6 @@
 package com.example.demo.services;
 
+import java.time.LocalDateTime;
 import java.util.Random;
 
 import org.springframework.mail.SimpleMailMessage;
@@ -24,18 +25,24 @@ public class UserService {
 		User user = repository.findByEmail(email);
 		
 		if (user != null && user.getPassword().equals(password)) {
+			try {
 			Random random = new Random();
 			int otp = random.nextInt(999999);
 			user.setOtp(otp);
+			user.setOtpTime(LocalDateTime.now());
 			repository.save(user);
+			
 			
 			SimpleMailMessage message = new SimpleMailMessage();
 			message.setTo(email);
 			message.setSubject("Your OTP Code");
 			message.setText("Your OTP Code is " + otp);
 			mailSender.send(message);
-			
 			return true;
+			} catch (Exception e) {
+				return false;
+			}
+			
 		} else {
 			return false;
 		}
@@ -44,9 +51,12 @@ public class UserService {
 	public String verifyOtp(int otp, String email) {
 		User user = repository.findByEmail(email);
 		if (user != null && user.getOtp() == otp) {
-			return user.getRole();
+			if (user.getOtpTime().plusMinutes(1).isAfter(LocalDateTime.now())) {
+				return user.getRole();
+			}
+			return "expired";
 		} else {
-			return "Invalid otp";
+			return "failed";
 		}
 	}
 }

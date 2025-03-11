@@ -1,5 +1,7 @@
 package com.example.demo.entities;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,6 +30,8 @@ public class User {
 	String role;
 	
 	private Integer otp;
+	
+	private LocalDateTime otpTime;
 	
 	public User() {
 		// TODO Auto-generated constructor stub
@@ -97,5 +101,12 @@ public class User {
 	public void setOtp(Integer otp) {
 		this.otp = otp;
 	}
-	
+
+	public LocalDateTime getOtpTime() {
+		return otpTime;
+	}
+
+	public void setOtpTime(LocalDateTime otpTime) {
+		this.otpTime = otpTime;
+	}
 }

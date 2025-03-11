@@ -41,9 +41,11 @@ public class UserController {
 			return "AdminDashboard";
 		} else if (role.equalsIgnoreCase("customer")) {
 			return "CustomerDashboard";
-		} else {
+		} else if (role.equalsIgnoreCase("failed")){
 			model.addAttribute("email", email);
 			return "otpFail";
+		} else {
+			return "otpTimeOut";
 		}
 	}
 }
