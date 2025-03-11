@@ -51,7 +51,7 @@
     <form action="/api/user/verifyOtp" method="post">
         <label>OTP:</label>
 		<p style="color: red;">OTP Verfication failed!</p>
-		<input type="hidden" name="email" value="${email}">
+		<input type="hidden" name="email" th:value="${email}">
         <input type="number" name="otp" required>
         <br>
         <input type="submit" value="ENTER">

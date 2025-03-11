@@ -7386,3 +7386,15 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-11 22:15:41.488
 !MESSAGE Boot project REMOVED: OTPLoginApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-11 22:56:56.709
+!MESSAGE Classpath changed for project: OTPLoginApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-11 22:56:56.711
+!MESSAGE Boot project ADDED: OTPLoginApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-11 22:57:00.230
+!MESSAGE Classpath changed for project: OTPBasedAuthDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-11 22:57:00.231
+!MESSAGE Boot project REMOVED: OTPBasedAuthDemo
