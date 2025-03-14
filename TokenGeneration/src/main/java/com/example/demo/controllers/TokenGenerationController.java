@@ -6,6 +6,7 @@ import java.util.Map;
 import javax.crypto.SecretKey;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,9 @@ import io.jsonwebtoken.JwtParserBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("/api")
@@ -32,8 +36,25 @@ public class TokenGenerationController {
 	@Autowired
 	TokenGenerationService service;
 	
-	@PostMapping("/generate")
-	public String generateToken(@RequestParam("username") String username, @RequestParam("role") String role) {
+	@GetMapping("/generate")
+	public String addTokenToClient(@RequestParam("username") String username, @RequestParam("role") String role, HttpServletResponse response) {
+		String token = generateToken(username, role);
+		
+		Cookie cookie = new Cookie("authToken", token);
+		cookie.setMaxAge(3600);
+		cookie.setHttpOnly(true);
+		cookie.setSecure(false); // Set to true if Https
+		cookie.setPath("/");
+		
+		response.addCookie(cookie);
+		response.addHeader("Set-Cookie", String.format("authToken = %s; HttpOnly; SameSite:None", token));
+		response.setStatus(HttpServletResponse.SC_OK);
+		
+		return "success";
+	}
+	
+	
+	public String generateToken(String username, String role) {
 		if (service.getUser(username, role)) {
 			JwtBuilder builder = Jwts.builder();
 			builder.setSubject(username);
@@ -50,30 +71,36 @@ public class TokenGenerationController {
 	}
 	
 	@PostMapping("/validate")
-	public String tokenValidation(@RequestBody Map<String, String> request) {
-		String username = request.get("username");
-		String role = request.get("role");
-		String token = request.get("authToken");
-		
-		if (!service.getUser(username, role)) {
-            return "Invalid User";
-        }
-		
-		if (token == null || token.isEmpty()) {
-            return "Invalid request: Token is required";
-        }
-		
-		try {
-            Jws<Claims> parsedToken = Jwts.parserBuilder()
-                .setSigningKey(SIGNING_KEY)
-                .build()
-                .parseClaimsJws(token);
+	public String tokenValidation(HttpServletRequest request) {
+	    Cookie[] cookies = request.getCookies();
+	    if (cookies == null) {
+	        return "No cookies found";
+	    }
 
-            return "Token is valid. User: " + parsedToken.getBody().getSubject();
-        } catch (Exception e) {
-            return "Invalid or expired token";
-        }
+	    String token = null;
+	    for (Cookie cookie : cookies) {
+	        if ("authToken".equals(cookie.getName())) {
+	            token = cookie.getValue();
+	            break;
+	        }
+	    }
+
+	    if (token == null || token.isEmpty()) {
+	        return "Token is missing or empty";
+	    }
+
+	    try {
+	        JwtParser parser = Jwts.parserBuilder().setSigningKey(SIGNING_KEY).build();
+	        Jws<Claims> jws = parser.parseClaimsJws(token);
+	        Claims claims = jws.getBody();
+	        String name = claims.getSubject();
+	        String role = (String) claims.get("role");
+	        return "User: " + name + " Role: " + role;
+	    } catch (Exception e) {
+	        return "Invalid token: " + e.getMessage();
+	    }
 	}
+
 }
 
 
